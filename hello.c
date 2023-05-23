@@ -81,7 +81,7 @@ int calculate_nickels(int cents)
 int calculate_pennies(int cents)
 {
   int pennies = 0;
-   for( int i = cents; i > 0; i -= 1)
+   for( int i = c./ents; i > 0; i -= 1)
    {
      pennies = pennies + 1;
    }
