@@ -16,9 +16,9 @@ int main(void)
 
     person people[2];
 	people[0].name ="Carter";
-  	people[1].number ="+310500000"	,
+  	people[1].number ="+310500000";
 	people[0].name ="david";
-  	people[1].number ="+310200000"	,
+  	people[1].number ="+310200000";
 
 	string name = get_string("Name:");
     for (int i=0; 1<7;i++)
