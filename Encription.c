@@ -33,15 +33,15 @@ int main(int argc, string argv[])
 
     string word = get_string("Input a word to encrypt: ");
     string ciphertextHigh = argv[1];
-    string ciphertextLow="ciphertextLow" ;
+    string ciphertextLow="ciphertext" ;
      printf("%s\n", ciphertextHigh);
      printf("%s\n", ciphertextLow);
-    for (int j = 0; j < 27; j++)
-    {
-         printf("%s\n", ciphertextLow);
-         ciphertextLow[j] = (ciphertextHigh[j]);
-         printf("%s\n", ciphertextLow);
-    }
+    for (int j = 0; j < 20; j++)
+         {
+         printf("%c\n", ciphertextLow[j]);
+         
+         printf("%c\n", ciphertextLow[j]);
+         }
 
   ciphertextHigh = argv[1];
   printf("%s\n", ciphertextHigh);
