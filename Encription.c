@@ -39,7 +39,8 @@ int main(int argc, string argv[])
       /*   ciphertextLow[j] = ciphertextHigh[j] + 32;
        printf("%c", ciphertextLow[j]);*/
     }
-  printf("%s %s \n", ciphertextLow, ciphertextHigh);
+  printf("%s %s \n", ciphertextLow);
+  printf("%s %s \n", ciphertextHigh);
     printf("ciphertext: ");
     for (int i = 0; i < strlen(word); i++)
     {
