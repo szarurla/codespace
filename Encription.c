@@ -48,7 +48,7 @@ int main(int argc, string argv[])
         {
             if (word_char_value >= 97 && word_char_value <= 122)
             {
-                printf("%c", ciphertext[word_char_value - 97]);
+                printf("%c", (ciphertext[word_char_value - 97]+32));
             }
         }
     }
