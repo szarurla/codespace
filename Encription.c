@@ -33,7 +33,7 @@ int main(int argc, string argv[])
 
     string word = get_string("Input a word to encrypt: ");
     string ciphertext = argv[1];
-    
+
     for (int i = 0; i < strlen(word); i++)
     {
         int word_char_value = word[i];
@@ -41,14 +41,14 @@ int main(int argc, string argv[])
         {
             if (word_char_value >= 65 && word_char_value <= 90)
             {
-                printf("%c", ciphertextHigh[word_char_value - 65]);
+                printf("%c", ciphertext[word_char_value - 65]);
             }
         }
         else if (islower(word[i]))
         {
             if (word_char_value >= 97 && word_char_value <= 122)
             {
-                printf("%c", ciphertextLow[word_char_value - 97]);
+                printf("%c", ciphertext[word_char_value - 97]);
             }
         }
     }
