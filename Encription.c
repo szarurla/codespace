@@ -30,13 +30,26 @@ int main(int argc, string argv[])
         printf("Use 26 alphabetic characters as command-line arguments.\n");
         return 1;
     }
+    string ciphertext = argv[1];
+    for (int j = 0; j < strlen(ciphertext); j++)
+    {
+        int lcarg = ciphertext[j];
+        if (lcarg >= 'a' && lcarg <= 'z')
+        {
+            ciphertext[j] = lcarg - 32;
+        }
+    }
 
     string word = get_string("Input a word to encrypt: ");
-    string ciphertext = argv[1];
 
+    printf("ciphertext: ");
     for (int i = 0; i < strlen(word); i++)
     {
         int word_char_value = word[i];
+        if (!isalpha(word[i]))
+        {
+            printf("%c", word[i]);
+        }
         if (isupper(word[i]))
         {
             if (word_char_value >= 65 && word_char_value <= 90)
@@ -48,7 +61,7 @@ int main(int argc, string argv[])
         {
             if (word_char_value >= 97 && word_char_value <= 122)
             {
-                printf("%c", (ciphertext[word_char_value - 97]+32));
+                printf("%c", (ciphertext[word_char_value - 97] + 32));
             }
         }
     }
