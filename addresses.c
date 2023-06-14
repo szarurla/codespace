@@ -9,9 +9,9 @@ int main(void)
     printf("%c\n", *(s));
     printf("%c\n", *(s+1));
     printf("%c\n", *(s+2));
-    printf("%c\n", *(s+3));
-    printf("%c\n", *(s+4));
-    for (int i=0; i<10;i++)
+    printf("%s\n", (s+1));
+    printf("%s\n", (s+2));
+    for (int i=0; i<1;i++)
     {
       printf("%c", *(s+i));
     }
