@@ -6,7 +6,8 @@ int main(void)
     string s = "HI!";
     printf("%c\n", *s);
     printf("%s\n", s);
-    printf("%c\n", *s(1+1));
-    printf("%c\n", *s(1+2));
-    printf("%c\n", *s(1+3));
+    printf("%c\n", *(s));
+    printf("%c\n", *(s+1));
+    printf("%c\n", *(s+2));
+    printf("%c\n", *(s+3));
 }
